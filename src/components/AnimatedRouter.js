@@ -9,8 +9,8 @@ function AnimatedRouters() {
     const location = useLocation();
     return (
         <AnimatePresence>
-            <Switch  location={location} key={location.pathname}>
-                <Route path="/about" component={AboutMe}/>
+            <Switch location={location} key={location.pathname}>
+                <Route exact path="/about" component={AboutMe}/>
                 <Route exact path="/" component={HomePage}/>
             </Switch >
         </AnimatePresence>
