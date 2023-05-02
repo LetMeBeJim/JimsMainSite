@@ -10,8 +10,8 @@ function AnimatedRouters() {
     return (
         <AnimatePresence>
             <Switch  location={location} key={location.pathname}>
-                <Route exact path="/" component={HomePage}/>
                 <Route path="/about" component={AboutMe}/>
+                <Route exact path="/" component={HomePage}/>
             </Switch >
         </AnimatePresence>
     )
