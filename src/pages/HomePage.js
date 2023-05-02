@@ -33,7 +33,7 @@ const HomePage = () => {
                         
                     </div>
                     <div className="group col relative" >
-                        <a href="https://github.com/LetMeBeJim" target="_blank" className="button absolute group-hover:block hover:invert hidden bg-[#6e5494] rounded-3xl text-2xl font-bold px-6 py-1 text-white 2xl:right-36 xl:right-6 lg:right-4 md:right-4 animate-bounce z-10 transition duration-150 ease-in-out">GitHub</a>
+                        <a href="https://github.com/LetMeBeJim" target="_blank" rel="noreferrer" className="button absolute group-hover:block hover:invert hidden bg-[#6e5494] rounded-3xl text-2xl font-bold px-6 py-1 text-white 2xl:right-36 xl:right-6 lg:right-4 md:right-4 animate-bounce z-10 transition duration-150 ease-in-out">GitHub</a>
                         <img src={logo} className="image flex items-center justify-center mx-auto max-h-96 bg-[#ffd373] rounded-3xl" alt="My Logo"></img>
                     </div>
                 </div>

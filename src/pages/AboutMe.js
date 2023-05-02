@@ -8,11 +8,11 @@ import './AboutMe.css';
 
 const AboutMe = () => {
 
-    const [is1Hovered, setIs1Hovered] = useState(false);
-    const [is2Hovered, setIs2Hovered] = useState(false);
-    const [is3Hovered, setIs3Hovered] = useState(false);
-    const [is4Hovered, setIs4Hovered] = useState(false);
-    const [is5Hovered, setIs5Hovered] = useState(false);
+    // const [is1Hovered, setIs1Hovered] = useState(false);
+    // const [is2Hovered, setIs2Hovered] = useState(false);
+    // const [is3Hovered, setIs3Hovered] = useState(false);
+    // const [is4Hovered, setIs4Hovered] = useState(false);
+    // const [is5Hovered, setIs5Hovered] = useState(false);
     return (
         <>
             <EntryTransition>
