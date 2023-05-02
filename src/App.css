@@ -1,5 +1,17 @@
-.App {
-  text-align: center;
+.backgroundColor {
+  z-index: -10;
+}
+
+body {
+  vertical-align: middle;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.main {
+  padding: 1em;
 }
 
 .App-logo {
