@@ -6,7 +6,7 @@
 
   }
 
-a:hover {
+.navbar a:hover {
   text-decoration: none !important;
   color:#ffb759 !important;
 }
@@ -37,6 +37,7 @@ a:hover {
     color:#ffb759;
     font-weight: bolder;
     background-color: #fff;
+    border-radius:100px 100px 0px 0px;
   }
 
   .nav-links li:visited

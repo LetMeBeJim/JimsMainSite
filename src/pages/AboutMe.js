@@ -5,6 +5,8 @@ import FillerLeft from "../components/FillerLeft";
 import FillerRight from "../components/FillerRight";
 import {motion} from 'framer-motion';
 import './AboutMe.css';
+import AboutMeBox from "../components/AboutMeBox";
+
 
 
 const AboutMe = () => {
@@ -24,38 +26,36 @@ const AboutMe = () => {
                 transition={{ duration: 1 }}
             >
                 <FillerLeft className="col"></FillerLeft>
-                <div className="col bg-[#f7fcf2]">
-                    <div className="group row h-[93vh] px-1 py-1 grid grid-rows-4 grid-cols-6 gap-1 font-mono font-medium">
-                        <div className="bg-gradient-to-br from-[#ffa938] to-[#f6fcd4] row-start-1 row-span-1 col-span-6 rounded-3xl">
-                            <h1 className="text-center font-bold text-7xl text-white">Interesting Things I've Made!</h1>
-                            <div className="h-[1rem]"></div>
-                            <p className="hidden group-hover:block text-center text-black">something something something else here</p>
-                        </div>
+                <div className="col bg-[#f7fcf2] font-mono font-medium w-screen pl-6 pt-6">
+                    <div className="row">
+                        <h1 className="font-mono font-extrabold text-9xl">My personal</h1>
+                        <h1 className="font-mono font-extrabold text-9xl">projects.</h1>
+                    </div>
+                    <div className="row h-[10%]"></div>
+                    <div className="row">
+                        <AboutMeBox 
+                            link="https://hellojimyao.com/"
+                            logo="coffee"
+                            description="Website to host my recipes"
+                        ></AboutMeBox>
 
-                        <div className="bg-gradient-to-br from-[#BBD915] to-[#f6fcd4] row-start-2 row-span-2 col-span-4 rounded-3xl">
-                            <h1 className="text-center pt-20 font-bold text-7xl text-white">React Recipe Site</h1>
-                            <div className="h-[1rem]"></div>
-                            <p className="hidden group-hover:block text-center text-black">something something something else here</p>
-                        </div>
+                        <AboutMeBox 
+                            link="https://github.com/LetMeBeJim/LilJasper_2.0"
+                            logo="coffee"
+                            description="A discord slash bot to fetch my tasks!"
+                        ></AboutMeBox>
 
-                        <div className="bg-gradient-to-br from-[#ff985c] to-[#e8ffc4] row-start-2 row-span-2 col-span-2 rounded-3xl">
-                            <h1 className="text-center pt-20 font-bold text-7xl text-white">Lil Jasper</h1>
-                            <div className="h-[1rem]"></div>
-                            <p className="hidden group-hover:block text-center text-black">something something something else here</p>
-                        </div>
+                        <AboutMeBox 
+                            link="https://github.com/LetMeBeJim/solana"
+                            logo="coffee"
+                            description="Practice solana dApp twitter for friends"
+                        ></AboutMeBox>
 
-
-                        <div className="bg-gradient-to-br from-[#ff985c] to-[#e8ffc4] row-start-4 row-span-1 col-span-5 rounded-3xl">
-                            <h1 className="text-center pt-20 font-bold text-7xl text-white">Angular Delivery Service</h1>
-                            <div className="h-[1rem]"></div>
-                            <p className="hidden group-hover:block text-center text-black">something something something else here</p>
-                        </div>
-
-                        <div className="bg-gradient-to-br from-[#ffa938] to-[#e8ffc4] row-start-4 row-span-1 col-span-1 rounded-3xl">
-                            <h1 className="text-center pt-20 font-bold text-7xl text-white">Solana dApp</h1>
-                            <div className="h-[1rem]"></div>
-                            <p className="hidden group-hover:block text-center text-black">something something something else here</p>
-                        </div>
+                        <AboutMeBox 
+                            link="https://github.com/LetMeBeJim/JimsRecipeSite"
+                            logo="coffee"
+                            description="A NodeJS backend for my recipe site"
+                        ></AboutMeBox>
                     </div>
                 </div>
                     
