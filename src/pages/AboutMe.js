@@ -27,34 +27,47 @@ const AboutMe = () => {
             >
                 <FillerLeft className="col"></FillerLeft>
                 <div className="col bg-[#f7fcf2] font-mono font-medium w-screen pl-6 pt-6">
-                    <div className="row">
+                    <div className="row h-[10%]"></div>
+
+                    <div className="row pb-12">
                         <h1 className="font-mono font-extrabold text-9xl">My personal</h1>
                         <h1 className="font-mono font-extrabold text-9xl">projects.</h1>
+                    </div>
+                    <div className="row">
+                        <p className="font-mono text-left w-4/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p>
                     </div>
                     <div className="row h-[10%]"></div>
                     <div className="row">
                         <AboutMeBox 
+                            topColor="#ffffff"
+                            bottomColor="#e8ffc4"
                             link="https://hellojimyao.com/"
-                            logo="coffee"
-                            description="Website to host my recipes"
+                            logo="carrot"
+                            description="A website to host my recipes"
                         ></AboutMeBox>
 
                         <AboutMeBox 
+                            topColor="#ffffff"
+                            bottomColor="#ff985c"
                             link="https://github.com/LetMeBeJim/LilJasper_2.0"
-                            logo="coffee"
+                            logo="fa-brands fa-discord"
                             description="A discord slash bot to fetch my tasks!"
                         ></AboutMeBox>
 
                         <AboutMeBox 
+                            topColor="#ffffff"
+                            bottomColor="#BBD915"
                             link="https://github.com/LetMeBeJim/solana"
-                            logo="coffee"
-                            description="Practice solana dApp twitter for friends"
+                            logo="comment"
+                            description="Practice solana dApp twitter for my friends"
                         ></AboutMeBox>
 
                         <AboutMeBox 
+                            topColor="#ffffff"
+                            bottomColor="#ffb759"
                             link="https://github.com/LetMeBeJim/JimsRecipeSite"
                             logo="coffee"
-                            description="A NodeJS backend for my recipe site"
+                            description="Github page for my recipe site"
                         ></AboutMeBox>
                     </div>
                 </div>
