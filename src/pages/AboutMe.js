@@ -29,11 +29,11 @@ const AboutMe = () => {
                 <div className="col bg-[#f7fcf2] font-mono font-medium w-screen pl-6 pt-6">
                     <div className="row h-[10%]"></div>
 
-                    <div className="row pb-12">
+                    <div className="row pb-12 pl-[100px]">
                         <h1 className="font-mono font-extrabold text-9xl">My personal</h1>
                         <h1 className="font-mono font-extrabold text-9xl">projects.</h1>
                     </div>
-                    <div className="row">
+                    <div className="row pl-[100px]">
                         <p className="font-mono text-left w-4/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p>
                     </div>
                     <div className="row h-[10%]"></div>
@@ -71,7 +71,6 @@ const AboutMe = () => {
                         ></AboutMeBox>
                     </div>
                 </div>
-                    
                 <FillerRight className="col"></FillerRight>
             </motion.div>    
         </>
