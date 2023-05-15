@@ -23,9 +23,6 @@ const HomePage = () => {
             <div className="h-[93vh] w-screen homepage col sm:w-4/6 md-w:4/6 xl:w-3/6 lg:w-4/6 bg-[#f7fcf2] flex justify-center items-center">
                 <div className="row py-[-50px] top-2 sm:top-0 min-[660px]:top-0 pl-[100px]">
                     <div className="col">
-                        <div>
-                            width: {width} ~ height: {height}
-                        </div>
                         <h1 className="lg:text-4xl xl:text-6xl font-extrabold md:text-2xl sm:text-2xl ">Hi. I'm Jim Yao.</h1>
                         <h3 className="text-lg font-semibold">A newly graduated Software Developer</h3>
                         <div class="pt-5 h-12"></div>

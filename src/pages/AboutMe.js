@@ -6,11 +6,11 @@ import FillerRight from "../components/FillerRight";
 import {motion} from 'framer-motion';
 import './AboutMe.css';
 import AboutMeBox from "../components/AboutMeBox";
-
+import useWindowDimensions from "../components/Dimension";
 
 
 const AboutMe = () => {
-
+    const { height, width } = useWindowDimensions();
     // const [is1Hovered, setIs1Hovered] = useState(false);
     // const [is2Hovered, setIs2Hovered] = useState(false);
     // const [is3Hovered, setIs3Hovered] = useState(false);
@@ -25,16 +25,25 @@ const AboutMe = () => {
                 animate={{ opacity: [0, 0, 1] }}
                 transition={{ duration: 1 }}
             >
-                <FillerLeft className="col"></FillerLeft>
+                {(width < 1920) ? <div></div> :<FillerLeft className="col"></FillerLeft>}
                 <div className="col bg-[#f7fcf2] font-mono font-medium w-screen pl-6 pt-6">
-                    <div className="row h-[10%]"></div>
+                
+                    {(width<1920) ? <div className="row pl-[100px]">
+                        <h1 className="font-mono font-extrabold text-xl">My Projects</h1>
+                    </div>: 
+                    <>
+                        <div className="row h-[10%]"></div>
+                        <div className="row pb-12 pl-[100px]">
+                            <h1 className="font-mono font-extrabold text-9xl">My personal</h1>
+                            <h1 className="font-mono font-extrabold text-9xl">projects.</h1>
+                        </div>
+                    </>
+                    }
+                    
 
-                    <div className="row pb-12 pl-[100px]">
-                        <h1 className="font-mono font-extrabold text-9xl">My personal</h1>
-                        <h1 className="font-mono font-extrabold text-9xl">projects.</h1>
-                    </div>
                     <div className="row pl-[100px]">
-                        <p className="font-mono text-left w-4/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p>
+                        {(width<1920)? <p className="font-mono text-left w-12/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p> : 
+                        <p className="font-mono text-left w-4/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p>}
                     </div>
                     <div className="row h-[10%]"></div>
                     <div className="row flex justify-center">
@@ -71,7 +80,7 @@ const AboutMe = () => {
                         ></AboutMeBox>
                     </div>
                 </div>
-                <FillerRight className="col"></FillerRight>
+                {(width < 1920) ? <div></div> :<FillerRight className="col"></FillerRight>}
             </motion.div>    
         </>
     );
