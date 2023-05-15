@@ -10,7 +10,7 @@ import useWindowDimensions from "../components/Dimension";
 
 
 const AboutMe = () => {
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
     // const [is1Hovered, setIs1Hovered] = useState(false);
     // const [is2Hovered, setIs2Hovered] = useState(false);
     // const [is3Hovered, setIs3Hovered] = useState(false);

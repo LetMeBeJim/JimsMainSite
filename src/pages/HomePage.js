@@ -9,7 +9,7 @@ import useWindowDimensions from "../components/Dimension";
 
 const HomePage = () => {
     // check viewport here and change transition prop accordingly
-    const { height, width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
 
     return (
         <>
