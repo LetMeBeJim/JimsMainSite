@@ -17,7 +17,7 @@ const AboutMeBox = (props) => {
 
     return (
         <>
-            <div className="col h-[25rem] w-[15rem] min-w-[12.5rem] px-2 py-2 mx-5">
+            <div className="col h-[25rem] w-[15rem] max-w-[20rem] min-[1920px]:max-w-[15rem] min-w-[12.5rem] px-2 py-2 lg:py-0 lg:h-[15rem] mx-5">
                 <a href={link} target="_blank" rel="noreferrer" className="">
                     <div className={`bg-[${topColor}] flex items-center justify-center border-solid border-[4px] border-black w-full h-50 rounded-tl-full rounded-tr-full`}>
                         <FontAwesomeIcon className="h-75" icon={logo} />

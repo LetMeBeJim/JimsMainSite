@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
       <>
-        <div className="backgroundColor"></div>
+        <div className="backgroundColor row"></div>
         <Navbar />
         <Router className="App">
           <AnimatedRouter />

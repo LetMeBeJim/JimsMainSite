@@ -37,7 +37,7 @@ const AboutMe = () => {
                         <p className="font-mono text-left w-4/12">Here is a showcase of my various projects. Websites are linked to the actual website, the rest is linked to my github pages.<br/> <br/>There are more, but I need to find a more interesting way of displaying them.</p>
                     </div>
                     <div className="row h-[10%]"></div>
-                    <div className="row">
+                    <div className="row flex justify-center">
                         <AboutMeBox 
                             topColor="#ffffff"
                             bottomColor="#e8ffc4"

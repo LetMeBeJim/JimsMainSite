@@ -22,9 +22,9 @@ const Resume = () => {
                         <h1 className="font-mono font-extrabold text-9xl">Me.</h1>
                     </div>
                     <div className="row pl-[100px]">
-                        <p className="font-mono text-left w-4/12">Really, send me an email here and I'm happy to receive anything!</p>
+                        <p className="font-mono text-left w-4/12 min-[2048px]:block min-[1920px]:hidden">Really, send me an email here and I'm happy to receive anything!</p>
                     </div>
-                    <div className="w-[67vw] h-[50%] relative flex items-center justify-center left-[10%]">
+                    <div className="w-[67vw] h-[50%] relative flex items-right justify-center min-[1920px]:left-[0px] min-[2048px]:left-[10%] min-[1920px]:bottom-[40px]">
                         <LoginBox className=""/>
                     </div>
                 </div>

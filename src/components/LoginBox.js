@@ -13,9 +13,7 @@ const LoginBox = () => {
 
     const handleClick =() =>{
         setAnimate(true);
-        console.log(animate);
         const info = {"email" : email, "message" : message}
-        console.log(info)
         setTimeout(() => setAnimate(false), 450)
         fetch("https://jimsmainsitebackend.ue.r.appspot.com/contact", {
             method: "POST",
@@ -28,6 +26,8 @@ const LoginBox = () => {
         })
         setEmail("");
         setMessage("");
+        var form = document.getElementById("myForm");
+        form.reset();
     }
 
 
@@ -37,7 +37,7 @@ const LoginBox = () => {
             <div className="row">
                 <img className={`${animate ? 'animate-[spin1_0.5s_linear_infinite]' : ''} absolute -rotate-[25deg] h-[400px] w-[400px] z-10 top-0 left-0`} alt="oops" src={peach}/>
                 <div className="absolute bg-gradient-to-r from-[#a8d971] to-[#c6eb86] w-[800px] rounded-lg flex items-center justify-center text-center py-[1rem] top-20 left-[250px] z-40">
-                    <form className='w-full h-full'>
+                    <form className='w-full h-full' id="myForm">
                         <p className="py-3 text-4xl font-bold text-white">Email</p>
                         <input type="text" className="w-[60%] h-10 rounded-2xl bg-[#f5f2f0] px-2 font-semibold text-center focus:bg-[#ffffff] focus:outline-[#db9e3b]" onChange={e => setEmail(e.target.value)}></input>
                         <p className="py-3 text-4xl font-bold text-white">Message</p>
