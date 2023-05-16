@@ -23,7 +23,6 @@
 }
 
 .navbar .row {
-  height:6.5vh;
   text-align: center;
 }
 
@@ -97,6 +96,9 @@
 
   .nav-links-mobile {
     z-index: 1000;
+    font-weight: bolder;
+    font-size: larger;
+    font-size:1.5rem;
     position: absolute;
     height: 100vh;
     top: 100%;
@@ -106,6 +108,10 @@
     list-style: none;
     color: #fff;
     transition: max-height 0.3s ease-out;
+  }
+
+  .nav-links-mobile li{
+    height:10vh;
   }
 
   .nav-links-mobile li:hover {
