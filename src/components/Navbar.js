@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+
+
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -9,33 +13,25 @@ const Navbar = () => {
       <h1 className="navbar-logo col-8 ">IamJim</h1>
       <ul className={isMobile ? "nav-links-mobile" : "nav-links col-4"}>
         <div className="row">
-          <li className="col">
+          <li className={isMobile ? "row flex justify-center items-center":"col"}>
             <a href="/" onClick={() => setIsMobile(false)}>
               Home
             </a>
           </li>
-          <li className="col">
+          <li className={isMobile ? "row flex justify-center items-center":"col"}>
             <a href="/about" onClick={() => setIsMobile(false)}>
               About Me
             </a>
           </li>
-          <li className="col">
+          <li className={isMobile ? "row flex justify-center items-center":"col"}>
             <a href="/contact" onClick={() => setIsMobile(false)}>
               Contact Me!
             </a>
           </li>
         </div>
       </ul>
-      <button
-        className="mobile-menu-icon"
-        onClick={() => setIsMobile(!isMobile)}
-      >
-        {isMobile ? (
-          <i className="fas fa-times"></i>
-        ) : (
-          <i className="fas fa-bars"></i>
-        )}
-      </button>
+      <FontAwesomeIcon className="mobile-menu-icon col" icon={faBars} onClick={() => setIsMobile(!isMobile)}></FontAwesomeIcon>
+
     </nav>
   );
 };
